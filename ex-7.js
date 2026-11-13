@@ -41,8 +41,25 @@ let orders = [
   },
 ];
 
+
+
+
+// ให้ลบ Object ของลูกค้าชื่อ Brenn Hugk ที่อยู่ใน Array orders
+// เมื่อลบ Object เสร็จแล้วให้ทำการแสดงผลค่าของ orders ออกมาดูทางหน้าจอ
+
 // Start coding here
 let isArray;
 let creditCardTypeOfBlindermann;
 let productQuantityOfJoannet;
 let totalPurchaseOfDary;
+
+Array.isArray(orders);
+creditCardTypeOfBlindermann=orders[2].creditCardType;
+orders[2].creditCardType="visa";
+productQuantityOfJoannet = orders[3].productQuantity;
+totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity;
+orders.shift();
+
+console.log(orders);
+
+
